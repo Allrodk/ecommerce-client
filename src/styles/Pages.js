@@ -76,3 +76,7 @@ export const BtnCancel = styled.input`
     background-color: red;
   }
 `;
+
+export const Empty = styled.div`
+  padding: 15rem;
+`;

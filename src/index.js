@@ -9,6 +9,7 @@ import Login from "./pages/User/Login/Login";
 import Profile from "./pages/User/Profile/Profile";
 import Edit from "./pages/User/Edit/Edit";
 import Cart from "./pages/User/Cart/Cart";
+import Details from './pages/Details/Details'
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import axios from "axios";
@@ -28,6 +29,7 @@ ReactDOM.render(
         <Route path="/user/profile" element={<Profile />} />
         <Route path="/user/edit" element={<Edit />} />
         <Route path="/user/cart" element={<Cart />} />
+        <Route path="/plano/details" element={<Details />} />
       </Routes>
       <Footer />
     </BrowserRouter>

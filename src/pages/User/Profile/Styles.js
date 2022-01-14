@@ -16,7 +16,14 @@ export const Item = styled.div`
     font-weight: bold;
   }
 
-  img{
+  img {
     width: 19rem;
+  }
+`;
+
+export const Auth = styled.div`
+  display: flex;
+  a {
+    text-decoration: none;
   }
 `;

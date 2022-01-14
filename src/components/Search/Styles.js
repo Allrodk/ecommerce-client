@@ -12,14 +12,25 @@ export const Container = styled.div`
     font-weight: 600;
     padding: 0 1rem;
   }
-  input[type=text] {
+  form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
+
+  input[type="text"] {
     margin: 0 0.5rem;
-    width: 32rem;
+    width: 19rem;
     padding: 0.5rem;
     font-size: 1.1rem;
     border: none;
   }
-  input[type=submit] {
+  input[type="submit"] {
     margin: 0 0.5rem;
     width: 10rem;
     padding: 1rem;

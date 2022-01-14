@@ -5,8 +5,7 @@ export default function Banner(props) {
     <Container>
       <img src={props.image} alt={props.name} />
       <InfoBar>
-        <span>Vários planos disponíveis</span>
-        <button>Escolha o seu aqui</button>         
+        <span>Vários planos disponíveis</span>        
       </InfoBar>
     </Container>
   )

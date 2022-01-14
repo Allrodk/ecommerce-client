@@ -53,11 +53,11 @@ export default function Navbar() {
     },
   ];
 
-  async function getProfile() {
-    Auth();
+  async function getProfile() {   
+    const config = Auth();
     if (localStorage.token) {
       await axios
-        .get("auth/profile")
+        .get("auth/profile", '', config)
         .then((response) => {
           setMenu(logado);
         })
@@ -110,11 +110,11 @@ export default function Navbar() {
   };
 
   return (
-    <Container>      
-        <Logo href="/">
-          <span>TV Online</span>
-        </Logo>
-     
+    <Container>
+      <Logo href="/">
+        <span>TV Online</span>
+      </Logo>
+
       <Links>
         <List
           activation={open}
@@ -129,7 +129,10 @@ export default function Navbar() {
                 key={item.link.toString()}
               >
                 <a href={item.href}>
-                  <img src={require(`../../images/${item.icon}`)} />
+                  <img
+                    src={require(`../../images/${item.icon}`)}
+                    alt={item.link}
+                  />
                   <span>{item.link}</span>
                 </a>
               </ListItem>

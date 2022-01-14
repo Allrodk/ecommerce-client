@@ -32,7 +32,8 @@ export default function Footer() {
         </Item>
       </Social>
       <span>
-        © 2022 TV Online. Não nos reponsabilizamos pelo que vocês assistem.
+        © 2022 TV Online. Não nos reponsabilizamos pelo que você decidiu
+        assistir.
       </span>
     </Container>
   );
