@@ -1,10 +1,14 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+  position: fixed;
+  background-color: white;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px black solid;
+  z-index: 99;
 `;
 
 export const Logo = styled.a`

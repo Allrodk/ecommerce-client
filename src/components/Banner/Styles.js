@@ -1,11 +1,15 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+  top: 3.8rem;
+  position: relative;
+  z-index: 1;
   width: 100vw;
   img {
     width: 100vw;
     height: 30rem;
   }
+ 
 `;
 
 export const InfoBar = styled.div`
@@ -18,25 +22,8 @@ export const InfoBar = styled.div`
     font-weight: 700;
     color: #1a1a1a;
   }
-  button {
-    background-color: #e60012;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 3rem;
-    border: none;
-    border-radius: 0.8rem;
-    padding: 2rem 0.8rem;
-    margin: 0 1rem;
-    color: #fff;
-    font-size: 1.5rem;    
-
-    &:hover {
-      cursor: pointer;
-      transition: 400ms;
-      transform: scale(1.1);
-    }
-  }
+  
+  
 `;
 
 export const AgeBar = styled.div`

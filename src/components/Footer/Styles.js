@@ -12,7 +12,9 @@ export const Container = styled.div`
   bottom: 0;
   /* position: relative; */
   width: 100vw;
-  z-index: -1;
+  top: 3.8rem;
+  position: relative;
+  z-index: 1;
 `;
 
 export const Social = styled.div`
